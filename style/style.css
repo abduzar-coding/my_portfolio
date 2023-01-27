@@ -2,6 +2,9 @@
   max-height: auto;
   overflow: hidden;
   margin: 1rem 0.1rem;
+  border: 1px solid black;
+  box-shadow: 5px 3px 20px #888888;
+  border-radius: 0.2rem;
 }
 .article div {
   overflow: hidden;
@@ -29,12 +32,30 @@
   max-height: var(--originalHeight);
 }
 .article .artPrevStamp {
+  max-height: 2rem;
+}
+.article .timeStamp {
+  color: rgb(50, 50, 50);
+  font-style: italic;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.article .linkCategory {
+  color: red;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
   height: 2rem;
 }
 .article .readMore {
   border: 0;
   background-color: transparent;
   text-decoration: underline;
+  float: right;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .article .readMore:hover {
   color: blue;
