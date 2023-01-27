@@ -1,8 +1,7 @@
 .article {
-  max-height: 22rem;
+  max-height: auto;
   overflow: hidden;
   margin: 1rem 0.1rem;
-  transition: all 1s ease;
 }
 .article div {
   overflow: hidden;
@@ -28,10 +27,6 @@
 }
 .article .artPrevStamp {
   height: 2rem;
-}
-
-.article.expand {
-  max-height: var(--originalHeight);
 }
 
 /*# sourceMappingURL=style.css.map */

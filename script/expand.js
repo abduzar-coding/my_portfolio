@@ -1,10 +1,18 @@
-const artPrevHeading = document.querySelector('.artPrevHeading');
-const article = document.querySelector('.article');
-article.style.setProperty('--originalHeight', `${article.scrollHeight}px`);
-artPrevHeading.style.setProperty('--originalHeight', `${artPrevHeading.scrollHeight}px`);
+// const artPrevHeading = document.querySelector('.artPrevHeading');
+// artPrevHeading.style.setProperty('--originalHeight', `${artPrevHeading.scrollHeight}px`);
 
-document.querySelector('.exp1').addEventListener('click', function() {
-    article.classlist.toggle('expand');
-    artPrevHeading.classlist.toggle('expand');
-});
+// document.querySelector('readMore').addEventListener('click', function() {
+//     artPrevHeading.classList.toggle('expand');
+// });
 
+// $( '.readMore' ).click(function() {
+//     $( ".readMore" ).each(function( i ) {
+//         if ( this.style.color !== "blue" ) {
+//         this.style.color = "blue";
+//         } else {
+//         this.style.color = "red";
+//         }
+//     });
+// });
+
+// $('.artPrevHeading').closest('.article');
