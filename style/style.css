@@ -2,9 +2,9 @@
   max-height: auto;
   overflow: hidden;
   margin: 1rem 0.1rem;
-  border: 1px solid black;
-  box-shadow: 5px 3px 20px #888888;
+  box-shadow: 5px 3px 10px #888888;
   border-radius: 0.2rem;
+  position: relative;
 }
 .article div {
   overflow: hidden;
@@ -25,41 +25,70 @@
   max-height: 15rem;
 }
 .article .artPrevHeading {
-  max-height: 3.5rem;
-  transition: all 1s ease;
+  max-height: 4.7rem;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.article .artPrevHeading .artTextOverlay {
+  position: absolute;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(88, 88, 88, 0.592));
+  width: 100%;
+  height: 4.7rem;
+  top: 0;
+  transition: all 0.5s ease;
 }
 .article .artPrevHeading.expand {
   max-height: var(--originalHeight);
 }
+@keyframes fromOverToTrans {
+  0% {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(88, 88, 88, 0.755));
+  }
+  100% {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.463));
+  }
+}
+.article .artPrevHeading.expand .artTextOverlay.expand {
+  height: var(--originalHeight);
+  animation: fromOverToTrans 1.5s linear 0s 1 normal both;
+}
+.article .readMoreOverlay {
+  position: absolute;
+  margin: 0 auto;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+  bottom: 1.3rem;
+  z-index: 1;
+  border: 0;
+  background-color: transparent;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.article .readMoreOverlay:hover {
+  color: rgba(31, 31, 255, 0.653);
+  cursor: pointer;
+}
 .article .artPrevStamp {
-  max-height: 2rem;
+  max-height: 4rem;
+  background-color: rgba(88, 88, 88, 0.592);
 }
 .article .timeStamp {
-  color: rgb(50, 50, 50);
+  color: rgb(236, 236, 236);
   font-style: italic;
   font-size: 0.8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 .article .linkCategory {
   color: red;
+  text-shadow: 0.1px 0.1px white;
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-flex;
   flex-wrap: wrap;
   align-content: center;
   height: 2rem;
-}
-.article .readMore {
-  border: 0;
-  background-color: transparent;
-  text-decoration: underline;
-  float: right;
-  font-size: 1.3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.article .readMore:hover {
-  color: blue;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
