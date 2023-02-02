@@ -54,6 +54,7 @@
         // .rateArticle {
         //     display: block;
         // }
+
         @keyframes fromOverToTrans {
             0% { background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(88, 88, 88, 0.755)); }
             100% { background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.463)); }
@@ -109,6 +110,42 @@
         height: 2rem;
     }
 
+    .share {
+        font-weight: bold;
+        position: relative;
+    }
+    .share:before {
+        content: ".";
+        font-size: 2.2em;
+        position: absolute;
+        bottom: -2.5px;
+        left: -4px;
+    }
+    .share:after {
+        content: ":";
+        font-size: 2em;
+        position: absolute;
+        bottom: -6px;
+        right: -7px;
+    }
+    
+    .save {
+        max-height: 1rem;
+        max-width: 1rem;
+        display: inline-block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        
+    }
 
 
 

@@ -90,5 +90,36 @@
   align-content: center;
   height: 2rem;
 }
+.article .share {
+  font-weight: bold;
+  position: relative;
+}
+.article .share:before {
+  content: ".";
+  font-size: 2.2em;
+  position: absolute;
+  bottom: -2.5px;
+  left: -4px;
+}
+.article .share:after {
+  content: ":";
+  font-size: 2em;
+  position: absolute;
+  bottom: -6px;
+  right: -7px;
+}
+.article .save {
+  max-height: 1rem;
+  max-width: 1rem;
+  display: inline-block;
+}
+.article .save img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article .save img:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
