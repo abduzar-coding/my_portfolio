@@ -33,6 +33,11 @@ Header -> Navigation -> Start
       padding-left: 1.5rem;
   }
 
+  .logo img{
+    width: 4rem;
+    height: 4rem;
+  }
+
   .burger{
       width: 2rem;
       margin-right: 1.5rem;
