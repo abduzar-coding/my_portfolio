@@ -6,43 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abduzar Portfolio</title>
     <link rel="stylesheet" href="/style/style.css">
+    <script src="script/script.js"></script>
   </head>
 <body>
 
-<header>
+  <!-- Navigation bar -->
+  <header class="nav">
 
+    <!-- Logo -->
+    <h1 class="logo">Logo</h1>
+
+    <!-- Burger menu -->
+    <div class="burger" id="burger" onclick="myFun()">
+        <div class="child-burger" id="child-burger"></div>
+        <div class="child-burger" id="child-burger"></div>
+        <div class="child-burger" id="child-burger"></div>
+    </div>
     
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Octagon.uz</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link2</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      
-
+    <!-- Menu -->
+    <ul id="menuON" class="menuON">
+        <li>Home</li>
+        <li>About</li>
+        <li>Latest</li>
+        <li>Categories</li>
+        <li>Contact</li>
+    </ul>
 </header>
 
 
-
+<!-- <div class="space" style="padding: 2rem;"></div> -->
 
 <section>
 <a href="create.html">New article</a>
