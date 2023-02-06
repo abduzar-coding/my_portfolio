@@ -224,7 +224,6 @@ Footer -> Start
     display: grid;
     align-items: center;
     justify-content: center;
-    border: 1px solid green;
     color: white;
   }
 
@@ -233,6 +232,12 @@ Footer -> Start
     font-size: 1.5rem;
     color: #888888;
     line-height: 2rem;
+  }
+
+  .info span{
+    text-decoration: none;
+    list-style: none;
+    color: #888888;
   }
 
   .socialMedia{
