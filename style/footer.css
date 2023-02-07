@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+    .footer{
+      box-sizing: border-box;
+      height: 50vh;
+      width: 100%;
+      bottom: 0%;
+      margin-top: 2rem;
+      background: black;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+  
+    .info{
+      text-align: center;
+      font-size: 1.5rem;
+      color: #888888;
+      line-height: 2rem;
+    }
+  
+    .info span{
+      text-decoration: none;
+      list-style: none;
+      color: #888888;
+    }
+  
+    .socialMedia{
+      display: flex;
+      justify-content: space-around;
+    }
+    .media-child{
+      position: relative;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+    }
+  
+    .media-child img{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .copyright{
+      text-align: center;
+      font-size: 2rem;
+    }
+    .copyright h5 span{
+      color: orange;
+    }
+  }
