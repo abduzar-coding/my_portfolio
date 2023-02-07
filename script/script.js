@@ -6,3 +6,18 @@ function myFun() {
 			  x.className = 'menuON'
 			}
 }
+
+
+function sendEmail() {
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : document.getElementById('username').value,
+        Password : "password",
+        To : 'kabduzar@gmail.com',
+        From : document.getElementById('email').value,
+        Subject : "From Web",
+        Body : document.getElementById('message').value
+    }).then(
+      message => alert(message)
+    );
+}

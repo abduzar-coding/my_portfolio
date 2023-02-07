@@ -121,6 +121,17 @@
 
 
 <footer class="footer">
+
+  <div class="contact-form" id="contact-form">
+    <form onsubmit="sendEmail()">
+      <h1>Contact me</h1>
+      <input type="text" placeholder="Full name" id="username">
+      <input type="email" placeholder="Email address" id="email">
+      <input type="text" placeholder="Phone number" id="phoneNumber">
+      <textarea name="" id="" cols="20" rows="1" id="message" placeholder="How can we co-operate?"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
   
   <div class="info">
     <p>Phone No: <span>+998 90-257-17-10</span></p>
@@ -141,6 +152,7 @@
 
 <script src="script/expand.js"></script>
 <script src="script/create.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
     
 </body>
 </html>
