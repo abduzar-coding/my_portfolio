@@ -11,11 +11,6 @@
       justify-content: center;
       color: white;
     }
-  
-
-    .contact-form{
-        /* background: green; */
-    }
 
     form{
         display: grid;
@@ -53,7 +48,8 @@
         padding: 0.3rem;
         background: transparent;
         color: white;
-        border: 1px solid white;
+        border: 2px solid orange;
+        color: orange;
         border-radius: 3rem;
         width: 50%;
         margin: 0.3rem auto;
@@ -62,8 +58,10 @@
     }
 
     form button:hover{
-        border: 2px solid orange;
-        color: orange;
+        /* border: 2px solid orange;
+        color: orange; */
+        border: 2px solid green;
+        color: green;
     }
 
     .info{

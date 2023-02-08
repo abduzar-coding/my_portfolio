@@ -18,6 +18,6 @@ function sendEmail() {
         Subject : "From Web",
         Body : document.getElementById('message').value
     }).then(
-      message => alert(message)
+        message => alert(message)
     );
 }
