@@ -121,7 +121,7 @@ RIGHT SIDE
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 
@@ -302,9 +302,5 @@ color: orange;
 
     .social{
         width: 60%;
-    }
-
-    .media-child{
-        width: 1.7rem;
     }
 }
