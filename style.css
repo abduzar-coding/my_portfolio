@@ -118,6 +118,7 @@ RIGHT SIDE
 
 
 .r-child{
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     scroll-snap-align: center;
@@ -138,6 +139,7 @@ CONTACT ME
     justify-content: center;
     align-items: center;
     row-gap: 6%;
+    /* border: 2px solid purple; */
 }
 
 .contact-child{
@@ -289,11 +291,20 @@ color: orange;
     
     .right{
         width: 100%;
+        height: 100vh;
     }
     
     .contact-child{
         /* height: 15%; */
-        width: 65%;
+        width: 85%;
         /* border: 1px solid white; */
+    }
+
+    .social{
+        width: 60%;
+    }
+
+    .media-child{
+        width: 1.7rem;
     }
 }
