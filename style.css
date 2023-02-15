@@ -111,7 +111,7 @@ RIGHT SIDE
 .right{
     box-sizing: border-box;
     width: 75%;
-    overflow-y: auto;
+    overflow-y:scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
@@ -154,18 +154,17 @@ CONTACT ME
 
 .contact-form{
     height: 40%;
-    width: 35%;
+    width: 40%;
 }
 
 .contact-form form{
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    padding: 0%;
+    justify-content: center;
     row-gap: 1.5rem;
     text-align: center;
-    height: 110%;
-    margin-top: -10%;
+    height: 100%;
 }
 
 .contact-form form input, .contact-form form textarea{
@@ -266,4 +265,35 @@ color: orange;
 }
 .portfolio{
     border: 2px solid blue;
+}
+
+
+
+/* TABLET */
+@media only screen and (max-width: 1100px) {
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+    .left{
+        display: none;
+    }
+    
+    .right{
+        width: 100%;
+    }
+    
+    .contact-child{
+        /* height: 15%; */
+        width: 65%;
+        /* border: 1px solid white; */
+    }
 }
