@@ -14,26 +14,31 @@ body{
 }
 
 .sides{
-    height: 100%;
+    height: 100vh;
 }
 
 .left{
+    box-sizing: border-box;
+    border: 2px solid white;
     width: 25%;
     background: #111;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 2%;
+    overflow: hidden;
 }
 
 .l-child{
-    height: 30%;
+    /* height: 30%; */
     width: 80%;
+    /* border: 2px solid red; */
 }
 
 .prof-pic{
-    width: 55%;
-    height: 26%;
+    width: 60%;
+    height: 25%;
     border-radius: 50%;
     border: 7px solid orange;
     overflow: hidden;
@@ -45,8 +50,7 @@ body{
 }
 
 .description{
-    height: 12%;
-    margin: 1rem 0;
+    height: 15%;
     color: white;
     text-align: center;
     display: grid;
@@ -54,21 +58,26 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.description-name{
+    font-size: 185%;
+}
+
 .description span{
     color: orange;
 }
 
-.description h2{
-    font-weight: 900;
+.description-text{
+    font-size: 130%;
 }
+
 
 .buttons{
     height: 50%;
     display: flex;
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 2rem;
     align-items: center;
-    margin-top: 1rem;
+    justify-content: center;
 }
 
 .buttons a{
@@ -132,14 +141,11 @@ CONTACT ME
 }
 
 .contact-child{
-    height: 15%;
-    width: 50%;
-    
+    /* height: 15%; */
+    /* width: 50%; */
+    /* border: 1px solid white; */
 }
 
-.title{
-    height: 5%;
-}
 .title h1{
     color: white;
     text-align: center;
@@ -147,31 +153,31 @@ CONTACT ME
 }
 
 .contact-form{
-    height: 45%;
+    height: 40%;
     width: 35%;
 }
 
 .contact-form form{
-    display: grid;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    row-gap: 1.5rem;
     text-align: center;
+    height: 110%;
+    margin-top: -10%;
 }
 
 .contact-form form input, .contact-form form textarea{
     border: none;
     border-bottom: 1px solid grey;
     border-radius: 1rem;
-    margin: 1.5rem 0;
-    padding: 0.3rem;
     outline: none;
     background: transparent;
     color: white;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-}
-
-#username{
-    margin-top: 0;
 }
 
 form input:hover::placeholder, form textarea:hover::placeholder{
@@ -200,7 +206,7 @@ form button:hover{
 } 
 
 .social{
-    height: 5%;
+    height: 4%;
     width: 30%;
     display: flex;
     justify-content: space-around;
@@ -208,13 +214,13 @@ form button:hover{
 
 .media-child{
 position: relative;
-width: 2,7rem;
+width: 1.8rem;
 height: 100%;
 cursor: pointer;
 }
 
 .media-child:hover{
-width: 2.9rem;
+width: 1.9rem;
 }
 
 .media-child img{
@@ -227,7 +233,7 @@ display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
-font-size: 1.4rem;
+font-size: 1.2rem;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 color: #888888;
 line-height: 2rem;
